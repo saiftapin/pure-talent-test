@@ -1,16 +1,7 @@
 import React from "react";
+import { Customer } from "../../types";
 import Card from "../Card";
 import LightBox from "../LightBox";
-
-type Customer = {
-  index: number;
-  name: string;
-  email: string;
-  gender: string;
-  address: string;
-  phone: string;
-  picture: string;
-};
 
 interface CustomerCardProps {
   customer: Customer;
