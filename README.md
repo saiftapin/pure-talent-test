@@ -6,6 +6,7 @@
     - Lightboxed Image
     - Paging
     - Refresh Reload Same Page
+    - Image Lazy Load
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) with typescript template and added the following the libraries.
 
