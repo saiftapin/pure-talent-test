@@ -31,7 +31,7 @@ const Customers: React.FC<CustomersProps> = () => {
           sortBy={sortCustomerById}
           limit={12}
           renderWith={(customer: Customer) => {
-            return <CustomerCard customer={customer} />;
+            return <CustomerCard key={customer.index} customer={customer} />;
           }}
         />
       </SearchContextProvider>
