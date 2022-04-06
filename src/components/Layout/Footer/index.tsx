@@ -1,21 +1,12 @@
 import React from "react";
-
+import './style.scss';
 interface FooterProps {
     
 }
  
 const Footer: React.FC<FooterProps> = () => {
     return (  
-        <footer style={{
-            display: "flex",
-            flexGrow: 0,
-            flexShrink: 0,
-            alignItems: "center",
-            height: "60px",
-            justifyContent: "center",
-            backgroundColor: "#333",
-            color: "#FFF"
-        }}>
+        <footer>
             &copy; 2022 - PureTalents
         </footer>
     );

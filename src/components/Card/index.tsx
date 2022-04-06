@@ -12,7 +12,7 @@ const Card: React.FC<CardProps> = ({ title, MoreDetail, children }) => {
   const [showMore, setShowMore] = useState<boolean>(false);
   return (
     <div className="card">
-      <div className="container">
+      <div className="card-inner">
         <h4>
           <b>{title}</b>
         </h4>

@@ -15,7 +15,6 @@ const Paging: React.FC<PagingProps> = ({
     total = 0,
     onClick
 }) => {
-
     const pageCounts = limit > 0 ? Math.floor(total / limit) + ((total % limit) > 0 ? 1 : 0) : 0;
 
     let pages = [];
@@ -43,7 +42,7 @@ const Paging: React.FC<PagingProps> = ({
 
     return (
         <div className="paging">
-            {pages.indexOf(1) === -1 && <Button type="page-btn" key="first" onClick={() => onPageClick(1)}>&lt;</Button>}
+            { pages.indexOf(1) === -1 && <Button type="page-btn" key="first" onClick={() => onPageClick(1)}>&lt;</Button> }
             { 
                 pages.map((p) => {
                     const btnType = (p === page)? "page-btn-sel" : "page-btn";
@@ -53,7 +52,7 @@ const Paging: React.FC<PagingProps> = ({
                         return <Button type={btnType} key={p} onClick={() => onPageClick(p)}>{p.toString()}</Button>
                 }) 
             }
-            {pages.indexOf(pageCounts) === -1 && <Button type="page-btn" key="last" onClick={() => onPageClick(pageCounts)}>&gt;</Button>}
+            { pages.indexOf(pageCounts) === -1 && <Button type="page-btn" key="last" onClick={() => onPageClick(pageCounts)}>&gt;</Button> }
         </div>
     );
 }

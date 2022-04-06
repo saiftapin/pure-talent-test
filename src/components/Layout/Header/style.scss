@@ -1,0 +1,13 @@
+$header-bgcolor: #7232fa;
+$header-color: #FFF;
+
+header{
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 1;
+    align-items: center;
+    height: 60px;
+    justify-content: center;
+    background-color: $header-bgcolor;
+    color: $header-color
+}

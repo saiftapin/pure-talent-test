@@ -1,25 +1,15 @@
 import React from "react";
-
+import './style.scss';
 interface ContentProps {
-    children?: React.ReactNode | React.ReactNode[];
+  children?: React.ReactNode | React.ReactNode[];
 }
 
-const Content: React.FC<ContentProps> = ({children}) => {
-    return (  
-        <div style={{
-            display: "flex",
-            flexGrow: 1,
-            flexShrink: 1,
-            overflow: "scroll"
-        }}>
-            <div id="top-pos" style={{
-                padding: "15px",
-                flex: 1
-            }}>
-                {children}
-            </div>
-        </div>
-    );
-}
- 
+const Content: React.FC<ContentProps> = ({ children }) => {
+  return (
+    <div className="content">
+      <div id="top-pos">{children}</div>
+    </div>
+  );
+};
+
 export default Content;
